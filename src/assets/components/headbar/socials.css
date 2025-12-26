@@ -1,0 +1,36 @@
+
+.headbar{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.blank{
+    width: 200px;
+    height: 20px;
+    background-color: aqua;
+}
+
+.headbar h1{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: "space grotesk";
+}
+
+
+.socials img{
+    width: 20px;
+    margin: 0 0 0 1rem;
+}
+
+
+
+
+@media screen and (max-width:450px) {
+    .headbar{
+        flex-direction: column;
+    }
+}
