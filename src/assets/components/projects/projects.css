@@ -2,5 +2,28 @@
 
 .projectsContainer {
   max-width: 1000px;
-  width: auto;
+  width: 100%;
+}
+.projectsHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.projectsHeader h1{
+  color: #FFFFFF;
+  font-family: "Space grotesk";
+}
+
+
+.projectsHeader button{
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  border-bottom:1px solid #4ee1a0;
+  padding: 0 0 0.4rem 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
 }
