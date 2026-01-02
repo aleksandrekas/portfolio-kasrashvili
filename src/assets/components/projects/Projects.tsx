@@ -14,11 +14,29 @@ export default function Projects(){
                     img='/images/thumbnail-project-2-small.webp'
                     title='just a regular '
                     tools={['HTML','CSS']}
+                    link='https://aleksandrekas.github.io/blog-preview-card/'
+                    code='https://github.com/aleksandrekas/blog-preview-card'
                 />
                 <Project
                     img='/images/thumbnail-project-2-small.webp'
                     title='just a regular everyday'
                     tools={['HTML','CSS']}
+                    link='https://aleksandrekas.github.io/blog-preview-card/'
+                    code='https://github.com/aleksandrekas/blog-preview-card'
+                />
+                <Project
+                    img='/images/thumbnail-project-2-small.webp'
+                    title='just a regular everyday'
+                    tools={['HTML','CSS']}
+                    link='https://aleksandrekas.github.io/blog-preview-card/'
+                    code='https://github.com/aleksandrekas/blog-preview-card'
+                />
+                <Project
+                    img='/images/thumbnail-project-2-small.webp'
+                    title='just a regular everyday'
+                    tools={['HTML','CSS']}
+                    link='https://aleksandrekas.github.io/blog-preview-card/'
+                    code='https://github.com/aleksandrekas/blog-preview-card'
                 />
             </div>
         </div>
@@ -30,14 +48,14 @@ export default function Projects(){
 
 
 
-function Project({img,title,tools}:{img:string,title:string,tools:Array<string>}){
+function Project({img,title,tools,link,code}:{img:string,title:string,tools:Array<string>,link:string,code:string}){
     return(
         <div className='project'>
             <div className='imgContainer'>
                 <img className='projectImage' src={img} alt="project_screenshot" />
                 <div className="buttons">
-                    <a href="http://" target='_blank'>VIEW PROJECT</a>
-                    <a href="http://" target='_blank'>VIEW CODE</a>
+                    <a href={link} target='_blank'>VIEW PROJECT</a>
+                    <a href={code} target='_blank'>VIEW CODE</a>
                 </div>
             </div>
             <p className='projectTitle'>{title}</p>
